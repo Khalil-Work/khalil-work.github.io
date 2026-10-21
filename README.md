@@ -1,9 +1,9 @@
-# khalil-work.github.io
+# Khalil-Work.github.io
 
 Personal academic homepage of **KHALIL** — PhD researcher in computational
 fluid dynamics, numerical methods and scientific machine learning.
 
-Live at: **https://khalil-work.github.io**
+Live at: **https://khalil-work.github.io** (displayed as Khalil-Work)
 
 ## Editing
 
