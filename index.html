@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHALIL — PhD Researcher, CFD &amp; Scientific Machine Learning</title>
+<meta name="description" content="Academic homepage of KHALIL — PhD researcher in computational fluid dynamics, numerical methods and scientific machine learning. Verified open-source solvers, reproducible benchmarks.">
+<style>
+  :root{
+    --navy:#0b1d33; --navy2:#12294a; --accent:#e8b04b; --ink:#23303f;
+    --muted:#5b7186; --bg:#f7f9fc; --card:#ffffff; --line:#dbe4ee;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.65}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  /* hero */
+  header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 70%);
+         color:#fff;padding:72px 0 60px}
+  header .kicker{letter-spacing:.22em;font-size:.8rem;color:var(--accent);
+                 text-transform:uppercase;margin-bottom:14px}
+  header h1{font-family:Georgia,"Times New Roman",serif;font-size:3rem;
+            letter-spacing:.06em;margin-bottom:10px}
+  header h1 span{color:var(--accent)}
+  header .role{font-size:1.15rem;color:#c9d7e8;max-width:640px}
+  .hero-links{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
+  .hero-links a{color:#fff;text-decoration:none;font-size:.92rem;
+    border:1px solid #3f6291;padding:9px 18px;border-radius:6px;transition:.2s}
+  .hero-links a:hover{background:#1d3d68;border-color:var(--accent)}
+  /* sections */
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-family:Georgia,serif;font-size:1.6rem;color:var(--navy);
+     margin-bottom:8px}
+  h2::after{content:"";display:block;width:56px;height:3px;
+            background:var(--accent);margin-top:8px}
+  .lead{color:var(--muted);max-width:760px;margin-bottom:28px}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+        padding:22px;transition:.2s}
+  .card:hover{box-shadow:0 8px 22px rgba(11,29,51,.10);transform:translateY(-2px)}
+  .card h3{font-size:1.02rem;color:var(--navy);margin-bottom:6px}
+  .card p{font-size:.9rem;color:var(--muted)}
+  .card .tag{display:inline-block;font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  /* project table-like rows */
+  .proj{display:flex;gap:16px;align-items:flex-start;padding:16px 0;
+        border-bottom:1px dashed var(--line)}
+  .proj:last-child{border-bottom:none}
+  .proj .n{font-family:Consolas,monospace;color:var(--accent);
+           font-size:.85rem;min-width:34px;padding-top:2px}
+  .proj b{color:var(--navy)}
+  .proj a{color:#2e6da4;text-decoration:none}
+  .proj a:hover{text-decoration:underline}
+  .proj p{font-size:.88rem;color:var(--muted)}
+  /* skills chips */
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:#eaf1f8;color:var(--navy);border:1px solid var(--line);
+        padding:7px 14px;border-radius:999px;font-size:.85rem}
+  /* timeline */
+  .tl{border-left:3px solid var(--line);margin-left:6px;padding-left:22px}
+  .tl .item{margin-bottom:22px}
+  .tl .when{font-size:.8rem;letter-spacing:.1em;color:var(--accent);
+            text-transform:uppercase}
+  .tl b{color:var(--navy)}
+  .tl p{font-size:.9rem;color:var(--muted)}
+  footer{padding:34px 0;color:var(--muted);font-size:.82rem;text-align:center}
+  footer a{color:#2e6da4;text-decoration:none}
+  @media(max-width:640px){header h1{font-size:2.2rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Academic Homepage</div>
+    <h1>KHA<span>LIL</span></h1>
+    <p class="role">PhD researcher in computational fluid dynamics, numerical
+       methods and scientific machine learning — building verified, reproducible
+       open-source solvers with measured accuracy.</p>
+    <div class="hero-links">
+      <a href="https://github.com/khalil-work">GitHub</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lead">
+      I am a PhD researcher working at the intersection of computational fluid
+      dynamics (CFD), classical numerical analysis and scientific machine
+      learning. My work philosophy is <b>verification first</b>: every solver I
+      publish is checked against exact analytic references, independent
+      formulations, or hand-computed cases — with measured errors, honest
+      limitations and reproducible pipelines, never unverified claims.
+    </p>
+    <div class="grid">
+      <div class="card"><span class="tag">CFD</span>
+        <h3>Flow physics &amp; discretization</h3>
+        <p>Lattice-Boltzmann and finite-volume methods, spectral solvers for the
+           Navier–Stokes equations, shock-capturing schemes with exact Riemann
+           references.</p></div>
+      <div class="card"><span class="tag">Scientific ML</span>
+        <h3>Physics-informed learning</h3>
+        <p>Physics-informed neural networks (PINNs) on ODE/PDE benchmarks with
+           free exact solutions; proper orthogonal and dynamic mode
+           decomposition verified against known synthetic spectra.</p></div>
+      <div class="card"><span class="tag">Numerics</span>
+        <h3>Classical numerical analysis</h3>
+        <p>Adaptive quadrature, bracketed root finding, Levenberg–Marquardt
+           inversion, sensitivity analysis and Kalman filtering — each with
+           roundoff-level cross-checks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Selected Projects</h2>
+    <p class="lead">Twenty original, independently verified open-source
+       repositories. A selection:</p>
+
+    <div class="proj"><div class="n">01</div><div>
+      <b><a href="https://github.com/khalil-work/vortex-notebook">Vortex Notebook</a></b>
+      — 2-D Navier–Stokes spectral solver
+      <p>Strictly de-aliased vorticity–streamline formulation with RK4;
+         Taylor–Green benchmark at the floating-point roundoff floor and a
+         3/2-rule padded reference match to 1e-12. Delivered as a tested
+         package plus an executed notebook.</p></div></div>
+
+    <div class="proj"><div class="n">02</div><div>
+      <b><a href="https://github.com/khalil-work/shockline-euler">Shockline</a></b>
+      — conservative Euler waves &amp; Riemann benchmarks
+      <p>First-order Rusanov and second-order MUSCL/SSP-RK3 finite-volume
+         solver verified against an exact Newton-iteration Riemann solver;
+         measured convergence orders 1 and 2.</p></div></div>
+
+    <div class="proj"><div class="n">03</div><div>
+      <b><a href="https://github.com/khalil-work/channel-lattice">Channel Lattice</a></b>
+      — lattice-Boltzmann channel flow
+      <p>D2Q9 BGK solver with Guo forcing and half-way bounce-back; emergent
+         Poiseuille profile matches the analytic parabola with measured
+         second-order grid convergence.</p></div></div>
+
+    <div class="proj"><div class="n">04</div><div>
+      <b><a href="https://github.com/khalil-work/droplet-pinn-studio">Droplet PINN Studio</a></b>
+      — physics-informed learning study
+      <p>Hard-IC versus soft-IC initial-condition handling under identical
+         budgets and controlled seeds, on a droplet law with a free exact
+         solution.</p></div></div>
+
+    <div class="proj"><div class="n">05</div><div>
+      <b><a href="https://github.com/khalil-work/quadrature-workbench">Quadrature Workbench</a></b>
+      — adaptive Simpson in C++17
+      <p>Richardson-error-controlled adaptive quadrature with honest
+         termination statuses and a bounded, regression-guarded benchmark
+         driver.</p></div></div>
+
+    <div class="proj"><div class="n">06</div><div>
+      <b><a href="https://github.com/khalil-work/trajectory-fusion-c">Trajectory Fusion</a></b>
+      — Kalman filtering in native C
+      <p>Joseph-form updates with chi-square consistency (NIS/NEES) and the
+         iterated Riccati gain validated against the closed-form steady-state
+         solution — zero dependencies.</p></div></div>
+
+    <p style="margin-top:18px;font-size:.9rem">
+      <a href="https://github.com/khalil-work?tab=repositories">
+      → all repositories on GitHub</a></p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills &amp; Tools</h2>
+    <div class="chips">
+      <span class="chip">Python</span><span class="chip">C / C++17</span>
+      <span class="chip">Fortran 2018</span><span class="chip">MATLAB / GNU Octave</span>
+      <span class="chip">NumPy · SciPy · PyTorch</span>
+      <span class="chip">Finite-volume methods</span>
+      <span class="chip">Lattice-Boltzmann (D2Q9)</span>
+      <span class="chip">Spectral methods</span>
+      <span class="chip">PINNs</span><span class="chip">POD / DMD</span>
+      <span class="chip">Kalman filtering</span>
+      <span class="chip">Levenberg–Marquardt</span>
+      <span class="chip">Sensitivity analysis (Sobol')</span>
+      <span class="chip">Git · CI (GitHub Actions)</span>
+      <span class="chip">CMake · CTest · pytest</span>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education &amp; Experience</h2>
+    <div class="tl">
+      <!-- TODO: replace the entries below with your exact institutions,
+           dates, supervisors and any publications. Keep the structure. -->
+      <div class="item">
+        <div class="when">Present</div>
+        <b>PhD Researcher — Computational Fluid Dynamics &amp; Scientific
+           Machine Learning</b>
+        <p>Research on verified numerical solvers for flow physics and
+           physics-informed learning; author of twenty independently tested
+           open-source scientific codes.</p>
+      </div>
+      <div class="item">
+        <div class="when">Earlier</div>
+        <b>Graduate &amp; undergraduate studies in computational engineering</b>
+        <p>Coursework and projects in fluid mechanics, heat transfer,
+           numerical analysis and scientific computing.
+           <i>(Edit this entry with your degrees and universities.)</i></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="wrap">
+    <h2>CV</h2>
+    <p class="lead">
+      A full curriculum vitae is available on request and will be posted here
+      as a PDF. <!-- TODO: add <a href="cv.pdf">Download CV (PDF)</a> once the
+      file cv.pdf is added to this repository. -->
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lead">
+      Best reached through GitHub:
+      <a href="https://github.com/khalil-work">github.com/khalil-work</a>.
+      <!-- TODO: add your email address here, e.g. name@university.edu -->
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 KHALIL ·
+    <a href="https://github.com/khalil-work">GitHub</a> ·
+    <a href="https://khalil-work.github.io">khalil-work.github.io</a>
+  </div>
+</footer>
+
+</body>
+</html>
